@@ -209,6 +209,18 @@ main {
                 font-weight: 400;
                 line-height: normal;
                 margin-bottom: 16px;
+
+                .sold-out {
+                    color: #D11F1F;
+                    text-align: center;
+                    font-family: variables.$font-main;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                    text-decoration: line-through;
+                    margin-left: 5px;
+                }
             }
 
             button {
@@ -236,7 +248,12 @@ main {
             display: flex;
             flex-direction: column;
             text-align: center;
-            h3 {
+            margin-top: 150px;
+
+            .reviews {
+                margin-top: 88px;
+            }
+           .reviews-text-first {
                 color: #000;
                 text-align: center;
                 font-feature-settings: 'clig' off, 'liga' off;
@@ -247,7 +264,7 @@ main {
                 line-height: 62px; /* 110.714% */
                 letter-spacing: -2.4px;
             }
-            p{
+            .reviews-text-second{
                 color: #000;
                 text-align: center;
                 font-feature-settings: 'clig' off, 'liga' off;
@@ -257,10 +274,62 @@ main {
                 font-weight: 600;
                 line-height: 27.6px; /* 153.333% */
                 letter-spacing: 0.1px;
+                margin-top: 15px;
             }
              
         }
+
+        .reviws-card {
+            display: flex;
+            gap: 30px;
+            margin: 26px auto 70px auto;
+            .person-card {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+                border-radius: 6px;
+                background: #FFF;
+                box-shadow: 0px 4px 24px 0px rgba(139, 167, 178, 0.16);
+                .person-img {
+                    width: 84px;
+                    margin: 32px 129px 0px 129px;
+                }
+                img {
+                    margin-top: 13px;
+                }
+
+                h4 {
+                    color: #1D293F;
+                    text-align: center;
+                    font-family: variables.$font-secont;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 28.8px; /* 130.909% */
+                    width: 295.556px;
+                    margin-top: 25px;
+                }
+
+                .person-description {
+                    width: 270px;
+                }
+
+                p {
+                    color: #7C8087;
+                    text-align: center;
+                    font-family: variables.$font-secont;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    margin-top: 6px;
+                }
+            }
+        }
     }
     
+
+   
 
 }

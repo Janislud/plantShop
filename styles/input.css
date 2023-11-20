@@ -360,6 +360,17 @@ main .flex-conteiner .card-product .grass-price {
   line-height: normal;
   margin-bottom: 16px;
 }
+main .flex-conteiner .card-product .grass-price .sold-out {
+  color: #D11F1F;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-decoration: line-through;
+  margin-left: 5px;
+}
 main .flex-conteiner .card-product button {
   border-radius: 8px;
   background: var(--Green, #50806B);
@@ -383,8 +394,12 @@ main .reviews-conteiner .reviews-wrapper {
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-top: 150px;
 }
-main .reviews-conteiner .reviews-wrapper h3 {
+main .reviews-conteiner .reviews-wrapper .reviews {
+  margin-top: 88px;
+}
+main .reviews-conteiner .reviews-wrapper .reviews-text-first {
   color: #000;
   text-align: center;
   font-feature-settings: "clig" off, "liga" off;
@@ -395,7 +410,7 @@ main .reviews-conteiner .reviews-wrapper h3 {
   line-height: 62px; /* 110.714% */
   letter-spacing: -2.4px;
 }
-main .reviews-conteiner .reviews-wrapper p {
+main .reviews-conteiner .reviews-wrapper .reviews-text-second {
   color: #000;
   text-align: center;
   font-feature-settings: "clig" off, "liga" off;
@@ -405,6 +420,89 @@ main .reviews-conteiner .reviews-wrapper p {
   font-weight: 600;
   line-height: 27.6px; /* 153.333% */
   letter-spacing: 0.1px;
+  margin-top: 15px;
+}
+main .reviews-conteiner .reviws-card {
+  display: flex;
+  gap: 30px;
+  margin: 26px auto 70px auto;
+}
+main .reviews-conteiner .reviws-card .person-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 6px;
+  background: #FFF;
+  box-shadow: 0px 4px 24px 0px rgba(139, 167, 178, 0.16);
+}
+main .reviews-conteiner .reviws-card .person-card .person-img {
+  width: 84px;
+  margin: 32px 129px 0px 129px;
+}
+main .reviews-conteiner .reviws-card .person-card img {
+  margin-top: 13px;
+}
+main .reviews-conteiner .reviws-card .person-card h4 {
+  color: #1D293F;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28.8px; /* 130.909% */
+  width: 295.556px;
+  margin-top: 25px;
+}
+main .reviews-conteiner .reviws-card .person-card .person-description {
+  width: 270px;
+}
+main .reviews-conteiner .reviws-card .person-card p {
+  color: #7C8087;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 6px;
+}
+
+footer .footer-sites div {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+}
+footer .footer-sites div ul {
+  display: flex;
+  gap: 16px;
+}
+footer .footer-sites div ul a {
+  text-decoration: none;
+  padding: 12px 8px;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+}
+footer .footer-sites .resurse-wrapper {
+  margin-top: 24px;
+}
+footer .footer-sites .copy-right {
+  background-color: #50806B;
+}
+footer .footer-sites .copy-right p {
+  color: #E8EDDE;
+  text-align: center;
+  font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 15px 0px 17px 0px;
 }
 
 * {

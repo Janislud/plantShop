@@ -1,0 +1,47 @@
+@use 'variables';
+
+
+footer {
+    .footer-sites {
+        div{
+            display: flex;
+            justify-content: center;
+            margin-top: 48px;
+            ul{
+                display: flex;
+                gap: 16px;
+                a {
+                    text-decoration: none;
+                    padding: 12px 8px;
+                    color: #000;
+                    font-family: variables.$font-three;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 100%;
+                }
+            }
+        }
+
+        .resurse-wrapper {
+            margin-top: 24px;
+        }
+
+        .copy-right {
+            background-color:#50806B ;
+            p{
+                color: #E8EDDE;
+                text-align: center;
+                font-family: variables.$font-footer;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                margin: 15px 0px 17px 0px;
+            }
+        }
+        
+    }
+}
