@@ -1,7 +1,5 @@
 @use 'variables';
 
-
-
 header {
 
     div {
@@ -17,10 +15,8 @@ header {
                 color: #FFF;
                 font-family: variables.$font-main;
                 font-size: 16px;
-                font-weight: variables.$font-weight-second;
-                line-height: normal;
+                font-weight: variables.$font-weight-six;
                 letter-spacing: 0.5px;
-
             }
         }
 
@@ -28,12 +24,10 @@ header {
             padding: 10px 0px 13px 200px;
             gap: 23px;
 
-
             .currency {
                 color: #FFF;
                 font-family: variables.$font-main;
                 font-size: 16px;
-                line-height: normal;
                 letter-spacing: 0.5px;
                 text-align: center;
 
@@ -43,26 +37,22 @@ header {
                 color: #FFF;
                 font-family: variables.$font-main;
                 font-size: 16px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: normal;
+                font-weight: variables.$font-weight-seven;
                 letter-spacing: 0.5px;
                 text-align: center;
             }
-
-
         }
     }
 
     nav {
         display: variables.$main-display;
-        background: #FFF;
+        background: variables.$color-white;
         box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
         z-index: 1;
         position: relative;
 
         div {
-            background: #FFF;
+            background: variables.$color-white;
 
             .img-wrapper {
                 padding: 12px 0px 12px 86px;
@@ -79,9 +69,6 @@ header {
                     color: #000;
                     font-family: variables.$font-main;
                     font-size: 17px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: normal;
                     letter-spacing: -0.6px;
                     padding: 10px;
                 }
@@ -99,25 +86,20 @@ header {
                         text-align: center;
                         flex-shrink: 0;
                         color: var(--Text-Secondary, #979797);
-                        font-family: Open Sans;
+                        font-family: variables.$font-main;
                         font-size: 17px;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: normal;
                         letter-spacing: -0.6px;
                     }
 
-
                     button {
                         border: none;
-                        background: white;
+                        background: variables.$color-white;
                         cursor: pointer;
 
                         img {
                             margin-left: 11px;
                         }
                     }
-
                 }
 
                 .border {
@@ -186,7 +168,6 @@ header {
                         font-style: normal;
                         font-weight: 600;
                         line-height: 80px;
-                        /* 100% */
                         letter-spacing: 2.4px;
                         margin: 157px 26px 27px 26px;
                         width: 542px;
@@ -198,31 +179,31 @@ header {
                         text-align: center;
                         font-family: variables.$font-secont;
                         font-size: 22px;
-                        width: 412px;
+                        width: 415px;
                         height: 92px;
                         margin: 0px 80px 36px 84px;
                         line-height: 40px;
                     }
 
                     button {
-                        display: inline-flex;
-                        padding: 24px 56px;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        gap: 10px;
-                        border-radius: 20px;
-                        background: #FFF;
-                        border: none;
-                        color: #000;
-                        text-align: center;
-                        font-family: variables.$font-main;
-                        font-size: 22px;
-                        font-style: normal;
-                        font-weight: 600;
-                        line-height: 22px;
-                        letter-spacing: -0.4px;
-                        text-transform: uppercase;
+                    //  @include variables.buttonGreen;
+                    display: inline-flex;
+                    padding: 24px 56px;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    border-radius: 20px;
+                    background: #FFF;
+                    border: none;
+                    color: #000;
+                    text-align: center;
+                    font-family: variables.$font-main;
+                    font-size: 22px;
+                    font-weight: variables.$font-weight-six;
+                    line-height: 22px;
+                    letter-spacing: -0.4px;
+                    text-transform: uppercase;
                     }
                 }
             }

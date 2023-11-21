@@ -1,49 +1,47 @@
 @use 'variables';
 
-
 main {
-    section{
-        .shop-category{
+    .conteiner {
+
+        .shop-category {
             border-bottom: 1px solid black;
             display: flex;
             align-items: center;
             justify-content: space-between;
             margin-top: 112px;
-             div {
-                
-                
-                h2{
+
+            .shop-description {
+
+                h2 {
                     color: #000;
                     font-family: variables.$font-secont;
                     font-size: 56px;
-                    font-style: normal;
-                    font-weight: 600;
+                    font-weight: variables.$font-weight-six;
                     line-height: 120%;
                     margin: 32px 0px 32px 0px;
-                    span{
-                        color:#50806B ;
+
+                    span {
+                        color: variables.$main-bg-header-color;
                         font-family: variables.$font-secont;
                         font-size: 56px;
-                        font-weight: 600;
+                        font-weight: variables.$font-weight-six;
                         line-height: 120%;
                     }
                 }
-             }
+            }
 
-             div {
+            div {
                 a {
                     color: #000;
                     text-align: right;
-                    font-family: variables.$font-secont;
+                    font-family: variables.$font-weight-six;
                     font-size: 30px;
-                    font-style: normal;
-                    font-weight: 400;
                     line-height: 21.7px;
                     text-transform: uppercase;
                     text-decoration: none;
                 }
-              
-             }
+
+            }
         }
 
         .category-wrapper {
@@ -52,6 +50,7 @@ main {
             text-align: center;
             margin-top: 52px;
             justify-content: space-evenly;
+
             div {
                 max-width: 180px;
                 max-height: 131px;
@@ -63,41 +62,39 @@ main {
             }
 
             p {
-                color: #343434;
+                color: variables.$second-color;
                 text-align: center;
                 font-family: variables.$font-main;
                 font-size: 16px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: normal;
+                font-weight: variables.$font-weight-seven;
                 letter-spacing: 3.2px;
                 text-transform: uppercase;
             }
         }
     }
 
-
     .selling-wrapper {
         display: flex;
         gap: 26px;
         margin: 55px 0px 126px 0px;
         justify-content: space-between;
+
         .product-card {
             border: none;
             border-radius: 16px;
-            background: #FFF;
-            box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+            background: variables.$color-white;
+            box-shadow: variables.$shadow;
             width: 384px;
             height: 424px;
-             img {
-                padding: 20px;
-           
 
-             }
-             button {
+            img {
+                padding: 20px;
+            }
+
+            button {
                 border-radius: 8px;
-                background: var(--Green, #50806B);
-                box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+                background: variables.$main-bg-header-color;
+                box-shadow: variables.$shadow;
                 display: flex;
                 flex-wrap: wrap;
                 padding: 15px 10px;
@@ -106,68 +103,60 @@ main {
                 gap: 10px;
                 width: 344px;
                 margin: 0px 20px 0 20px;
-                color: #FFF;
+                color: variables.$color-white;
                 text-align: center;
                 font-family: variables.$font-main;
-                font-size: 20px;
-                font-weight: 700;
+                font-size: variables.$font-size-20;
+                font-weight: variables.$font-weight-seven;
                 border: none;
                 cursor: pointer;
-             }
-
+            }
         }
     }
 
-   
-        
-        .grid-conteiner {
+    .grid-conteiner {
         display: grid;
         grid-template-columns: 2fr 2fr 2fr 2fr;
         gap: 25px;
         margin-top: 50px;
+
         .card-product {
             width: 266px;
             border-radius: 16px;
-            background: #FFF;
-            box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+            background: variables.$color-white;
+            box-shadow: variables.$shadow;
             padding: 20px;
             margin-left: auto;
             margin-right: auto;
-            
+
             img {
                 width: 226px;
             }
 
             .grass-description {
-                color: #343434;
+                color: variables.$second-color;
                 font-family: variables.$font-main;
-                font-size: 20px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: normal;
+                font-size: variables.$font-size-20;
+                font-weight: variables.$font-weight-seven;
                 margin-bottom: 4px;
             }
+
             .grass-price {
-                color: #343434;
+                color: variables.$second-color;
                 font-family: variables.$font-main;
-                font-size: 20px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
+                font-size: variables.$font-size-20;
                 margin-bottom: 16px;
             }
 
             button {
                 border-radius: 8px;
-                background: var(--Green, #50806B);
-                box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
-                color: #FFF;
+                background: variables.$main-bg-header-color;
+                box-shadow: variables.$shadow;
+                color: variables.$color-white;
                 text-align: center;
-                font-family: Open Sans;
-                font-size: 20px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: normal;
+                font-family: variables.$font-main;
+                font-size: variables.$font-size-20;
+                font-weight: variables.$font-weight-seven;
                 height: 64px;
                 padding: 8px;
                 width: 236px;
@@ -181,6 +170,7 @@ main {
         display: flex;
         gap: 25px;
         margin-top: 25px;
+
         .card-product {
             padding: 20px;
             flex-direction: column;
@@ -189,25 +179,21 @@ main {
             flex: 1 0 0;
             align-self: stretch;
             border-radius: 16px;
-            background: #FFF;
-            box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+            background: variables.$color-white;
+            box-shadow: variables.$shadow;
 
             .grass-description {
-                color: #343434;
+                color: variables.$second-color;
                 font-family: variables.$font-main;
-                font-size: 20px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: normal;
+                font-size: variables.$font-size-20;
+                font-weight: variables.$font-weight-seven;
                 margin-bottom: 4px;
             }
+
             .grass-price {
-                color: #343434;
+                color: variables.$second-color;
                 font-family: variables.$font-main;
-                font-size: 20px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
+                font-size: variables.$font-size-20;
                 margin-bottom: 16px;
 
                 .sold-out {
@@ -215,9 +201,7 @@ main {
                     text-align: center;
                     font-family: variables.$font-main;
                     font-size: 16px;
-                    font-style: normal;
-                    font-weight: 300;
-                    line-height: normal;
+                    font-weight: variables.$font-wieght-three;
                     text-decoration: line-through;
                     margin-left: 5px;
                 }
@@ -225,15 +209,13 @@ main {
 
             button {
                 border-radius: 8px;
-                background: var(--Green, #50806B);
-                box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
-                color: #FFF;
+                background: variables.$main-bg-header-color;
+                box-shadow: variables.$shadow;
+                color: variables.$color-white;
                 text-align: center;
-                font-family: Open Sans;
+                font-family: variables.$font-main;
                 font-size: 20px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: normal;
+                font-weight: variables.$font-weight-seven;
                 height: 64px;
                 padding: 8px;
                 width: 236px;
@@ -244,6 +226,7 @@ main {
 
     .reviews-conteiner {
         background: #E8EDDE;
+
         .reviews-wrapper {
             display: flex;
             flex-direction: column;
@@ -253,48 +236,49 @@ main {
             .reviews {
                 margin-top: 88px;
             }
-           .reviews-text-first {
+
+            .reviews-text-first {
                 color: #000;
                 text-align: center;
-                font-feature-settings: 'clig' off, 'liga' off;
+                font-feature-settings: 'clig'off, 'liga'off;
                 font-family: variables.$font-secont;
                 font-size: 56px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 62px; /* 110.714% */
+                font-weight: variables.$font-weight-five;
+                line-height: 62px;
                 letter-spacing: -2.4px;
             }
-            .reviews-text-second{
+
+            .reviews-text-second {
                 color: #000;
                 text-align: center;
-                font-feature-settings: 'clig' off, 'liga' off;
+                font-feature-settings: 'clig'off, 'liga'off;
                 font-family: variables.$font-secont;
                 font-size: 18px;
-                font-style: normal;
-                font-weight: 600;
-                line-height: 27.6px; /* 153.333% */
+                font-weight: variables.$font-weight-six;
+                line-height: 27.6px;
                 letter-spacing: 0.1px;
                 margin-top: 15px;
             }
-             
         }
 
         .reviws-card {
             display: flex;
             gap: 30px;
             margin: 26px auto 70px auto;
+
             .person-card {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                
                 border-radius: 6px;
-                background: #FFF;
+                background: variables.$color-white;
                 box-shadow: 0px 4px 24px 0px rgba(139, 167, 178, 0.16);
+
                 .person-img {
                     width: 84px;
                     margin: 32px 129px 0px 129px;
                 }
+
                 img {
                     margin-top: 13px;
                 }
@@ -304,10 +288,9 @@ main {
                     text-align: center;
                     font-family: variables.$font-secont;
                     font-size: 22px;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: 28.8px; /* 130.909% */
-                    width: 295.556px;
+                    font-weight: variables.$font-weight-five;
+                    line-height: 28.8px;
+                    width: 255.556px;
                     margin-top: 25px;
                 }
 
@@ -320,16 +303,12 @@ main {
                     text-align: center;
                     font-family: variables.$font-secont;
                     font-size: 18px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: normal;
+               
                     margin-top: 6px;
+                    margin-bottom: 25px;
                 }
             }
         }
     }
-    
-
-   
 
 }

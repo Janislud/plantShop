@@ -12,7 +12,6 @@ header div .first-header-wrapper .shop-info {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 600;
-  line-height: normal;
   letter-spacing: 0.5px;
 }
 header div .second-header-wrapper {
@@ -23,7 +22,6 @@ header div .second-header-wrapper .currency {
   color: #FFF;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  line-height: normal;
   letter-spacing: 0.5px;
   text-align: center;
 }
@@ -31,9 +29,7 @@ header div .second-header-wrapper .support {
   color: #FFF;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   letter-spacing: 0.5px;
   text-align: center;
 }
@@ -60,9 +56,6 @@ header nav div ul li {
   color: #000;
   font-family: "Open Sans", sans-serif;
   font-size: 17px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
   letter-spacing: -0.6px;
   padding: 10px;
 }
@@ -78,16 +71,13 @@ header nav div div div input {
   text-align: center;
   flex-shrink: 0;
   color: var(--Text-Secondary, #979797);
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 17px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
   letter-spacing: -0.6px;
 }
 header nav div div div button {
   border: none;
-  background: white;
+  background: #FFF;
   cursor: pointer;
 }
 header nav div div div button img {
@@ -136,7 +126,6 @@ header section .banner div .text-wrapper h1 {
   font-style: normal;
   font-weight: 600;
   line-height: 80px;
-  /* 100% */
   letter-spacing: 2.4px;
   margin: 157px 26px 27px 26px;
   width: 542px;
@@ -147,7 +136,7 @@ header section .banner div .text-wrapper p {
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-size: 22px;
-  width: 412px;
+  width: 415px;
   height: 92px;
   margin: 0px 80px 36px 84px;
   line-height: 40px;
@@ -166,7 +155,6 @@ header section .banner div .text-wrapper button {
   text-align: center;
   font-family: "Open Sans", sans-serif;
   font-size: 22px;
-  font-style: normal;
   font-weight: 600;
   line-height: 22px;
   letter-spacing: -0.4px;
@@ -177,63 +165,58 @@ header .green-border {
   height: 39px;
 }
 
-main section .shop-category {
+main .conteiner .shop-category {
   border-bottom: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 112px;
 }
-main section .shop-category div h2 {
+main .conteiner .shop-category .shop-description h2 {
   color: #000;
   font-family: "Poppins", sans-serif;
   font-size: 56px;
-  font-style: normal;
   font-weight: 600;
   line-height: 120%;
   margin: 32px 0px 32px 0px;
 }
-main section .shop-category div h2 span {
+main .conteiner .shop-category .shop-description h2 span {
   color: #50806B;
   font-family: "Poppins", sans-serif;
   font-size: 56px;
   font-weight: 600;
   line-height: 120%;
 }
-main section .shop-category div a {
+main .conteiner .shop-category div a {
   color: #000;
   text-align: right;
-  font-family: "Poppins", sans-serif;
+  font-family: 600;
   font-size: 30px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 21.7px;
   text-transform: uppercase;
   text-decoration: none;
 }
-main section .category-wrapper {
+main .conteiner .category-wrapper {
   display: flex;
   gap: 25px;
   text-align: center;
   margin-top: 52px;
   justify-content: space-evenly;
 }
-main section .category-wrapper div {
+main .conteiner .category-wrapper div {
   max-width: 180px;
   max-height: 131px;
 }
-main section .category-wrapper img {
+main .conteiner .category-wrapper img {
   width: 180px;
   height: 180px;
 }
-main section .category-wrapper p {
+main .conteiner .category-wrapper p {
   color: #343434;
   text-align: center;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   letter-spacing: 3.2px;
   text-transform: uppercase;
 }
@@ -256,7 +239,7 @@ main .selling-wrapper .product-card img {
 }
 main .selling-wrapper .product-card button {
   border-radius: 8px;
-  background: var(--Green, #50806B);
+  background: #50806B;
   box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
   display: flex;
   flex-wrap: wrap;
@@ -296,31 +279,24 @@ main .grid-conteiner .card-product .grass-description {
   color: #343434;
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   margin-bottom: 4px;
 }
 main .grid-conteiner .card-product .grass-price {
   color: #343434;
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
   margin-bottom: 16px;
 }
 main .grid-conteiner .card-product button {
   border-radius: 8px;
-  background: var(--Green, #50806B);
+  background: #50806B;
   box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
   color: #FFF;
   text-align: center;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 20px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   height: 64px;
   padding: 8px;
   width: 236px;
@@ -346,18 +322,13 @@ main .flex-conteiner .card-product .grass-description {
   color: #343434;
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   margin-bottom: 4px;
 }
 main .flex-conteiner .card-product .grass-price {
   color: #343434;
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
   margin-bottom: 16px;
 }
 main .flex-conteiner .card-product .grass-price .sold-out {
@@ -365,23 +336,19 @@ main .flex-conteiner .card-product .grass-price .sold-out {
   text-align: center;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  font-style: normal;
   font-weight: 300;
-  line-height: normal;
   text-decoration: line-through;
   margin-left: 5px;
 }
 main .flex-conteiner .card-product button {
   border-radius: 8px;
-  background: var(--Green, #50806B);
+  background: #50806B;
   box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
   color: #FFF;
   text-align: center;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 20px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   height: 64px;
   padding: 8px;
   width: 236px;
@@ -405,9 +372,8 @@ main .reviews-conteiner .reviews-wrapper .reviews-text-first {
   font-feature-settings: "clig" off, "liga" off;
   font-family: "Poppins", sans-serif;
   font-size: 56px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 62px; /* 110.714% */
+  line-height: 62px;
   letter-spacing: -2.4px;
 }
 main .reviews-conteiner .reviews-wrapper .reviews-text-second {
@@ -416,9 +382,8 @@ main .reviews-conteiner .reviews-wrapper .reviews-text-second {
   font-feature-settings: "clig" off, "liga" off;
   font-family: "Poppins", sans-serif;
   font-size: 18px;
-  font-style: normal;
   font-weight: 600;
-  line-height: 27.6px; /* 153.333% */
+  line-height: 27.6px;
   letter-spacing: 0.1px;
   margin-top: 15px;
 }
@@ -447,10 +412,9 @@ main .reviews-conteiner .reviws-card .person-card h4 {
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-size: 22px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 28.8px; /* 130.909% */
-  width: 295.556px;
+  line-height: 28.8px;
+  width: 255.556px;
   margin-top: 25px;
 }
 main .reviews-conteiner .reviws-card .person-card .person-description {
@@ -461,10 +425,8 @@ main .reviews-conteiner .reviws-card .person-card p {
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
   margin-top: 6px;
+  margin-bottom: 25px;
 }
 
 footer .footer-sites div {
@@ -482,7 +444,6 @@ footer .footer-sites div ul a {
   color: #000;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 100%;
 }
@@ -497,9 +458,7 @@ footer .footer-sites .copy-right p {
   text-align: center;
   font-family: "Public Sans", sans-serif;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
   letter-spacing: 2px;
   text-transform: uppercase;
   margin: 15px 0px 17px 0px;
@@ -511,6 +470,7 @@ footer .footer-sites .copy-right p {
   box-sizing: border-box;
   font-style: normal;
   font-weight: 400;
+  line-height: normal;
 }
 
 .conteiner {
